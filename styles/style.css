@@ -1,6 +1,6 @@
 @font-face {
     font-family: TerminusTTF;
-    src: url("TerminusTTF-4.47.0.ttf");
+    src: url("../TerminusTTF-4.47.0.ttf");
 }
 
 
@@ -134,7 +134,7 @@ background
 }
 
 .stars {
-    background: black url("./gallery/stars.png") repeat;
+    background: black url("../gallery/stars.png") repeat;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -147,7 +147,7 @@ background
 .twinkling {
     width: 10000px;
     height: 100%;
-    background: transparent url("./gallery/twinkling.png") repeat;
+    background: transparent url("../gallery/twinkling.png") repeat;
     background-size: 1000px 1000px;
     position: absolute;
     right: 0;
@@ -166,7 +166,7 @@ background
 .clouds {
     width: 10000px;
     height: 100%;
-    background: transparent url("./gallery/clouds_repeat.png") repeat;
+    background: transparent url("../gallery/clouds_repeat.png") repeat;
     background-size: 1000px 1000px;
     position: absolute;
     right: 0;
