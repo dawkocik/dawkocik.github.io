@@ -61,14 +61,13 @@ a {
 
 a[href="mailto:dawkocik@gmail.com"] {
     text-decoration: none;
-    --color: #FF66FF;
 }
 
 a[href="mailto:dawkocik@gmail.com"]:hover {
     all: inherit;
 }
 
-html body div#bg div.container.d-flex.flex-column.min-vh-100.justify-content-center.align-items-center div#terminal.terminal div.terminal-wrapper div.cmd div.cmd-wrapper div.cmd-cursor-line span.cmd-cursor {
+html body div.container.d-flex.flex-column.min-vh-100.justify-content-center.align-items-center div#terminal.terminal div.terminal-wrapper div.cmd div.cmd-wrapper div.cmd-cursor-line span.cmd-cursor {
     background-color: rgba(0, 0, 0, 0);
 }
 
@@ -83,3 +82,110 @@ html body div#bg div.container.d-flex.flex-column.min-vh-100.justify-content-cen
     border-left: 2px solid #333333;
     border-bottom: 2px solid #333333;
 }
+
+
+<!--
+background
+
+-->
+
+@keyframes move-background {
+    from {
+        -webkit-transform: translate3d(0px, 0px, 0px);
+    }
+    to {
+        -webkit-transform: translate3d(1000px, 0px, 0px);
+    }
+}
+
+@-webkit-keyframes move-background {
+    from {
+        -webkit-transform: translate3d(0px, 0px, 0px);
+    }
+    to {
+        -webkit-transform: translate3d(1000px, 0px, 0px);
+    }
+}
+
+@-moz-keyframes move-background {
+    from {
+        -webkit-transform: translate3d(0px, 0px, 0px);
+    }
+    to {
+        -webkit-transform: translate3d(1000px, 0px, 0px);
+    }
+}
+
+@-webkit-keyframes move-background {
+    from {
+        -webkit-transform: translate3d(0px, 0px, 0px);
+    }
+    to {
+        -webkit-transform: translate3d(1000px, 0px, 0px);
+    }
+}
+
+.background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.stars {
+    background: black url("./gallery/stars.png") repeat;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    z-index: 0;
+}
+
+.twinkling {
+    width: 10000px;
+    height: 100%;
+    background: transparent url("./gallery/twinkling.png") repeat;
+    background-size: 1000px 1000px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+
+    -moz-animation: move-background 50s linear infinite;
+    -ms-animation: move-background 50s linear infinite;
+    -o-animation: move-background 50s linear infinite;
+    -webkit-animation: move-background 50s linear infinite;
+    animation: move-background 50s linear infinite;
+
+}
+
+.clouds {
+    width: 10000px;
+    height: 100%;
+    background: transparent url("./gallery/clouds_repeat.png") repeat;
+    background-size: 1000px 1000px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 3;
+
+    -moz-animation: move-background 60s linear infinite;
+    -ms-animation: move-background 60s linear infinite;
+    -o-animation: move-background 60s linear infinite;
+    -webkit-animation: move-background 60s linear infinite;
+    animation: move-background 60s linear infinite;
+}
+
+img {
+    height: 70vh;
+    width: 70vh;
+    position: absolute;
+    z-index: 3;
+    right: 20px;
+}
+

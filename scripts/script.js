@@ -1,24 +1,13 @@
 const weekdayNames = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
-// VANTA.CLOUDS2({
-//     el: "#your-element-selector",
-//     mouseControls: true,
-//     touchControls: true,
-//     gyroControls: false,
-//     minHeight: 200.00,
-//     minWidth: 200.00,
-//     scale: 1.00,
-//     texturePath: "./gallery/noise.png"
-// })
-
 $(function () {
     const date = new Date();
     const dateString = weekdayNames[date.getDay()] + " "
         + monthNames[date.getMonth()] + " "
         + date.getDate() + " "
         + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds() + " "
-        + date.getFullYear()
+        + date.getFullYear();
 
     $('#terminal').terminal({
         contact: function () {
