@@ -1,0 +1,184 @@
+@font-face {
+    font-family: TerminusTTF;
+    src: url("TerminusTTF-4.47.0.ttf");
+}
+
+
+/* status bar */
+
+.fa {
+    color: #333333;
+}
+
+a {
+    border-radius: 50%;
+    line-height: 13px;
+    width: 13px;
+    height: 13px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 3px;
+}
+
+.buttons {
+    margin-left: 8px;
+}
+
+.close {
+    background-color: #d75224;
+}
+
+.minimize, .enlarge {
+    background-color: #898989;
+}
+
+#status-bar {
+    font-size: 10px;
+    top: 0;
+    background-color: #333333;
+    height: 18px;
+    width: 800px;
+    z-index: 1001;
+    border-radius: 10px 10px 0 0;
+}
+
+
+/* terminal */
+
+.cmd, .cmd div, .cmd span[data-text]:not(.cmd-inverted):not(.token):not(.emoji), .terminal, .terminal-output > :not(.raw) a, .terminal-output > :not(.raw) div, .terminal-output > :not(.raw) span[data-text]:not(.token):not(.inverted):not(.terminal-inverted):not(.cmd-inverted):not(.terminal-error):not(.emoji) {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.terminal,
+.terminal-output > :not(.raw),
+.terminal-output > :not(.raw) span:not(.fas):not(.far):not(.fa),
+.terminal-output > :not(.raw) a,
+.cmd,
+.cmd span:not(.fas):not(.far):not(.fa) {
+    font-family: TerminusTTF;
+    font-size: 20px;
+}
+
+a[href="mailto:dawkocik@gmail.com"] {
+    text-decoration: none;
+    --color: #FF66FF;
+}
+
+a[href="mailto:dawkocik@gmail.com"]:hover {
+    all: inherit;
+}
+
+.terminal {
+    width: 800px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: relative;
+    z-index: 1000;
+    border-radius: 0 0 10px 10px;
+    border-right: 2px solid #333333;
+    border-left: 2px solid #333333;
+    border-bottom: 2px solid #333333;
+}
+
+
+/* background */
+
+@keyframes move-background {
+    from {
+        -webkit-transform: translate3d(0px, 0px, 0px);
+    }
+    to {
+        -webkit-transform: translate3d(1000px, 0px, 0px);
+    }
+}
+
+@-webkit-keyframes move-background {
+    from {
+        -webkit-transform: translate3d(0px, 0px, 0px);
+    }
+    to {
+        -webkit-transform: translate3d(1000px, 0px, 0px);
+    }
+}
+
+@-moz-keyframes move-background {
+    from {
+        -webkit-transform: translate3d(0px, 0px, 0px);
+    }
+    to {
+        -webkit-transform: translate3d(1000px, 0px, 0px);
+    }
+}
+
+@-webkit-keyframes move-background {
+    from {
+        -webkit-transform: translate3d(0px, 0px, 0px);
+    }
+    to {
+        -webkit-transform: translate3d(1000px, 0px, 0px);
+    }
+}
+
+.background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.stars {
+    background: black url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    z-index: 0;
+}
+
+.twinkling {
+    width: 10000px;
+    height: 100%;
+    background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png") repeat;
+    background-size: 1000px 1000px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+
+    -moz-animation: move-background 70s linear infinite;
+    -ms-animation: move-background 70s linear infinite;
+    -o-animation: move-background 70s linear infinite;
+    -webkit-animation: move-background 70s linear infinite;
+    animation: move-background 70s linear infinite;
+
+}
+
+.clouds {
+    width: 10000px;
+    height: 100%;
+    background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/clouds_repeat.png") repeat;
+    background-size: 1000px 1000px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 3;
+
+    -moz-animation: move-background 150s linear infinite;
+    -ms-animation: move-background 150s linear infinite;
+    -o-animation: move-background 150s linear infinite;
+    -webkit-animation: move-background 150s linear infinite;
+    animation: move-background 150s linear infinite;
+}
+
+img {
+    height: 70vh;
+    width: 70vh;
+    position: absolute;
+    z-index: 3;
+    right: 20px;
+}
