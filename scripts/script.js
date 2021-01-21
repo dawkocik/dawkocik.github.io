@@ -1,6 +1,17 @@
 const weekdayNames = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
+// VANTA.CLOUDS2({
+//     el: "#your-element-selector",
+//     mouseControls: true,
+//     touchControls: true,
+//     gyroControls: false,
+//     minHeight: 200.00,
+//     minWidth: 200.00,
+//     scale: 1.00,
+//     texturePath: "./gallery/noise.png"
+// })
+
 $(function () {
     const date = new Date();
     const dateString = weekdayNames[date.getDay()] + " "
@@ -10,12 +21,12 @@ $(function () {
         + date.getFullYear()
 
     $('#terminal').terminal({
-        contact: function() {
-            this.echo('\ndiscord: kn#4000');
-            this.echo('mail: dawkocik@\x00gmail.com');
-            this.echo('telegram: @knuieiey')
-            this.echo('linkedin: linkedin.com/in/dawid-kocik');
-            this.echo('github: github.com/dawkocik/\n');
+        contact: function () {
+            this.echo('\n[[;#8a9cfe;]discord]: kn#4000');
+            this.echo('[[;#d64a3a;]mail]: dawkocik@\x00gmail.com');
+            this.echo('[[;#269ed1;]telegram]: @knuieiey')
+            this.echo('[[;#fff;]github]: github.com/dawkocik/');
+            this.echo('[[;#0077b7;]linkedin]: linkedin.com/in/dawid-kocik\n');
         },
         '?': function () {
             this.echo('Available commands:\n'
@@ -25,10 +36,10 @@ $(function () {
                 + '  skills - my skills\n');
         },
         projects: function () {
-            this.echo('knotbot - A Discord bot used mostly for stats and an advanced ranking system including elo counting from voice channel activity');
+            this.echo('[[;#ff66ff;]knotbot] - A Discord bot used mostly for stats and an advanced ranking system including elo counting from voice channel activity');
         },
         about: function () {
-            this.echo("\nDawid Kocik - a self-taught programmer and graphic amateur.\nDuring my free time I enjoy playing video games.\nMy biggest dream is to visit Tokyo.\n")
+            this.echo("\n[[g;white;]Dawid Kocik - a self-taught programmer and graphic amateur.\nDuring my free time I enjoy playing video games.\nMy biggest dream is to visit Tokyo.]\n")
         },
         skills: function () {
             this.echo('\n[[;#336e9e;]python] - very good\n'
@@ -43,7 +54,7 @@ $(function () {
             this.echo('siema')
         }
     }, {
-        greetings: 'Welcome to knOS 40.00\n\n'
+        greetings: 'Welcome to knOS 40.00 LTS (GNU/Linux 4.15.0-72-generic x86_64)\n\n'
             + 'Available commands:\n'
             + '  contact - reach me\n'
             + '  projects - explore my projects\n'
