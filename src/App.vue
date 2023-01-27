@@ -15,8 +15,6 @@ body {
   background: linear-gradient(111.76deg, #9ea1d4 0.37%, #d39ed4 87.93%);
   width: 100%;
   height: 100%;
-  margin: 0;
-  padding: 0;
 }
 .container {
   margin: 0;

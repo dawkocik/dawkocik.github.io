@@ -14,7 +14,7 @@ import Button from "./Button.vue"
 .container {
   border-top: 2px solid;
   width: 100%;
-  background: rgba(0, 0, 0, 0.17);
+  background: #9085b0;
   position: fixed;
   bottom: 0;
 }
