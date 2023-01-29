@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Arima+Madurai&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
 
 @font-face {
   font-family: "Metro Retro NF";
@@ -8,6 +9,16 @@
 @font-face {
   font-family: "Joystix";
   src: local("Joystix"), url("/fonts/joystix.ttf");
+}
+
+@font-face {
+  font-family: "Dubiel";
+  src: local("Dubiel"), url("/fonts/DubielPlain.ttf");
+}
+
+@font-face {
+  font-family: "Antique Book Cover";
+  src: local("Antique Book Cover Regular"), url("/fonts/Antique Book Cover.otf");
 }
 
 html,

@@ -29,10 +29,11 @@
   margin: 0 auto;
   display: flex;
   justify-content: center;
+  margin-top: 5vh;
 }
 
 span {
-  letter-spacing: -45px;
+  letter-spacing: -3vw;
 }
 
 h1 {
@@ -42,18 +43,19 @@ h1 {
 }
 
 p {
-  font-family: "Arima Madurai", cursive;
+  font-family: "Lato", sans-serif;
   font-weight: 400;
-  font-size: 2vw;
+  font-size: 1.9vw;
   line-height: 111.8%;
   text-align: right;
-  letter-spacing: -0.045em;
+  letter-spacing: 0.05rem;
 
   width: 40vw;
-  height: 50vh;
   float: left;
 
   margin-right: 3vw;
+
+  transform: translateY(5%);
 }
 
 img {

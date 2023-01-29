@@ -1,12 +1,18 @@
 <script setup>
 import Home from "./components/Home.vue"
 import Navbar from "./components/Navbar.vue"
+import Projects from "./components/Projects.vue"
+import Footer from "./components/Footer.vue"
+import Contact from "./components/Contact.vue"
 </script>
 
 <template>
   <div class="container">
     <Home />
     <Navbar />
+    <Projects />
+    <Contact />
+    <Footer />
   </div>
 </template>
 

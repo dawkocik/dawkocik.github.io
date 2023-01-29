@@ -3,7 +3,7 @@ import Button from "./Button.vue"
 </script>
 
 <template>
-  <div class="container">
+  <div class="navbar">
     <Button>Home</Button>
     <Button>Projects</Button>
     <Button>Contact</Button>
@@ -11,7 +11,8 @@ import Button from "./Button.vue"
 </template>
 
 <style scoped>
-.container {
+.navbar {
+  z-index: 69;
   border-top: 2px solid;
   width: 100%;
   background: #9085b0;
