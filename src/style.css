@@ -30,6 +30,7 @@ body {
 
   margin: 0px !important;
   padding: 0px !important;
+  overflow-x: hidden;
 }
 
 #app {
@@ -40,4 +41,29 @@ body {
 
 * {
   margin: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #9085b0;
+  border-left: 3px solid #000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #768a7e;
+  border-top: 3px solid #000;
+  border-bottom: 3px solid #000;
+  border-left: 3px solid #000;
+  border-radius: 4px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }

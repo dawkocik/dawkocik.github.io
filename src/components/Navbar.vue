@@ -24,7 +24,7 @@ export default {
 
 <style scoped>
 .navbar {
-  z-index: 69;
+  z-index: 999;
   border-top: 2px solid;
   width: 100%;
   background: #9085b0;
