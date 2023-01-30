@@ -29,7 +29,11 @@ export default {
   },
   computed: {
     image() {
-      return "background: url(" + this.data.image + "); background-size: cover;"
+      return (
+        'background: url("projects/' +
+        this.data.image +
+        '") no-repeat center  / cover;'
+      )
     },
     variant() {
       return this.iteration % 2 == 0 ? "left" : "right"
@@ -98,7 +102,7 @@ export default {
   justify-content: center;
 }
 
-.right > .description {
+.right > .description-wrapper > .description {
   text-align: right;
 }
 

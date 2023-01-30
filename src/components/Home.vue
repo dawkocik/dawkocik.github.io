@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <h1>D<span>a</span>wid Kocik</h1>
+    <h1>Dawid Kocik</h1>
     <div class="content">
       <p>
         I am an experienced graphic designer and UI/UX designer with a strong
@@ -32,14 +32,23 @@
   margin-top: 5vh;
 }
 
-span {
-  letter-spacing: -3vw;
+h1 {
+  font-family: "Joystix";
+  font-size: 10vw;
+  font-weight: 400;
+  margin-top: 2vh;
+  position: relative;
 }
 
-h1 {
-  font-family: "Metro Retro NF";
-  font-size: 12vw;
-  font-weight: 400;
+h1::after {
+  position: absolute;
+  content: "Dawid Kocik";
+  top: 8px;
+  left: 8px;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  color: #768a7e;
 }
 
 p {

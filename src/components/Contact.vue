@@ -1,17 +1,21 @@
 <template>
   <div class="contact">
-    <div class="entry">
-      <img src="../assets/email.svg" />
+    <a href="mailto:dawkocik@gmail.com" target="_blank" class="entry">
+      <img src="../assets/gmail.svg" />
       <p>dawkocik@gmail.com</p>
-    </div>
-    <div class="entry">
+    </a>
+    <a href="https://t.me/knuieiey" target="_blank" class="entry">
       <img src="../assets/telegram.svg" />
       <p>@knuieiey</p>
-    </div>
-    <div class="entry">
+    </a>
+    <a
+      href="https://discord.com/users/239114767690629120"
+      target="_blank"
+      class="entry"
+    >
       <img src="../assets/discord.svg" />
       <p>kn#1960</p>
-    </div>
+    </a>
   </div>
 </template>
 
@@ -25,7 +29,7 @@
 }
 
 img {
-  height: 10vh;
+  width: 10vh;
   margin-right: 1vw;
 }
 
@@ -42,14 +46,18 @@ img {
   padding-left: 1vw;
   padding-right: 1vw;
 
-  padding-top: 1vh;
-  padding-bottom: 1vh;
+  height: 12vh;
 
   margin-right: 1vw;
 }
 
 p {
   font-size: 1.7vw;
-  font-family: "Lato", sans-serif;
+  font-family: "Joystix", sans-serif;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
 }
 </style>

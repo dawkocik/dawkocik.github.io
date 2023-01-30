@@ -25,9 +25,9 @@ import json from "../assets/projects.json"
 
 <style scoped>
 .projects {
-  margin-top: 20vh;
   width: 90%;
   margin: 0 auto;
+  margin-top: 13vh;
 }
 
 .project {

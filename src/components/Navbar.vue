@@ -4,11 +4,23 @@ import Button from "./Button.vue"
 
 <template>
   <div class="navbar">
-    <Button>Home</Button>
-    <Button>Projects</Button>
-    <Button>Contact</Button>
+    <Button @click="scrollTo('home')">Home</Button>
+    <Button @click="scrollTo('projects')">Projects</Button>
+    <Button @click="scrollTo('contact')">Contact</Button>
   </div>
 </template>
+
+<script>
+export default {
+  methods: {
+    scrollTo(component) {
+      const element = document.getElementsByClassName(component)[0]
+      const y = element.getBoundingClientRect().top + window.scrollY - 30
+      window.scrollTo({ top: y, behavior: "smooth" })
+    },
+  },
+}
+</script>
 
 <style scoped>
 .navbar {
