@@ -43,8 +43,8 @@ h1 {
 h1::after {
   position: absolute;
   content: "Dawid Kocik";
-  top: 8px;
-  left: 8px;
+  top: 0.9vh;
+  left: 0.6vw;
   z-index: -1;
   width: 100%;
   height: 100%;

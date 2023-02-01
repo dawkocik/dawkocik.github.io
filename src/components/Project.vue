@@ -1,6 +1,10 @@
+<script setup>
+import Gallery from "./Gallery.vue"
+</script>
+
 <template>
   <div v-if="variant === 'left'" class="project left">
-    <div id="image" :style="image" />
+    <Gallery id="image" :images="this.data.images" />
     <div class="description-wrapper">
       <div class="description">{{ data.description }}</div>
       <img v-for="img in data.technologies" :src="img + '.svg'" class="icon" />
@@ -11,7 +15,7 @@
       <div class="description">{{ data.description }}</div>
       <img v-for="img in data.technologies" :src="img + '.svg'" class="icon" />
     </div>
-    <div id="image" :style="image" />
+    <Gallery id="image" :images="this.data.images" />
   </div>
 </template>
 
@@ -28,13 +32,6 @@ export default {
     },
   },
   computed: {
-    image() {
-      return (
-        'background: url("projects/' +
-        this.data.image +
-        '") no-repeat center  / cover;'
-      )
-    },
     variant() {
       return this.iteration % 2 == 0 ? "left" : "right"
     },
