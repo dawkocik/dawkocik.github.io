@@ -4,7 +4,7 @@ import Gallery from "./Gallery.vue"
 
 <template>
   <div v-if="variant === 'left'" class="project left">
-    <Gallery id="image" :images="this.data.images" />
+    <Gallery id="image" :images="data.images" />
     <div class="description-wrapper">
       <div class="description">{{ data.description }}</div>
       <img v-for="img in data.technologies" :src="img + '.svg'" class="icon" />
@@ -15,7 +15,7 @@ import Gallery from "./Gallery.vue"
       <div class="description">{{ data.description }}</div>
       <img v-for="img in data.technologies" :src="img + '.svg'" class="icon" />
     </div>
-    <Gallery id="image" :images="this.data.images" />
+    <Gallery id="image" :images="data.images" />
   </div>
 </template>
 
